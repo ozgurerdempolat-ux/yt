@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: youtube-downloader-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "/opt/render/project/src/.venv/bin/gunicorn app:app"
